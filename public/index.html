@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Blanco Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚪ Los Blanco Dashboard</h1>
+            <nav>
+                <a href="#stats" class="nav-item active" data-target="stats-section">System Stats</a>
+                <a href="#identity" class="nav-item" data-target="identity-section">Identity</a>
+                <a href="#soul" class="nav-item" data-target="soul-section">Soul</a>
+                <a href="#user" class="nav-item" data-target="user-section">User</a>
+                <a href="#agents" class="nav-item" data-target="agents-section">Agents</a>
+                <a href="#memory" class="nav-item" data-target="memory-section">Memory</a>
+                <a href="#monologue" class="nav-item" data-target="monologue-section">Monologue</a>
+                <a href="#tasks" class="nav-item" data-target="tasks-section">Tasks</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="stats-section" class="dashboard-section active">
+                <h2>System Performance</h2>
+                <div class="stats-grid">
+                    <div class="card">
+                        <h3>CPU Usage</h3>
+                        <p id="cpu-usage">--%</p>
+                        <p id="cpu-cores">Cores: --</p>
+                    </div>
+                    <div class="card">
+                        <h3>Memory Usage</h3>
+                        <p id="mem-usage">--%</p>
+                        <p id="mem-info">-- GB / -- GB</p>
+                    </div>
+                    <div class="card">
+                        <h3>GPU Info</h3>
+                        <div id="gpu-info">
+                            <p>--</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>OS Info</h3>
+                        <p id="os-platform">--</p>
+                        <p id="os-distro">--</p>
+                        <p id="os-hostname">--</p>
+                    </div>
+                    <div class="card full-width">
+                      <h3>Blanco Status</h3>
+                      <p>Status: <span id="blanco-status">--</span></p>
+                      <p>Uptime: <span id="blanco-uptime">--</span></p>
+                      <p>Version: <span id="blanco-version">--</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="identity-section" class="dashboard-section">
+                <h2>IDENTITY.md</h2>
+                <div id="identity-content" class="file-content">Loading...</div>
+            </section>
+
+            <section id="soul-section" class="dashboard-section">
+                <h2>SOUL.md</h2>
+                <div id="soul-content" class="file-content">Loading...</div>
+            </section>
+
+            <section id="user-section" class="dashboard-section">
+                <h2>USER.md</h2>
+                <div id="user-content" class="file-content">Loading...</div>
+            </section>
+
+            <section id="agents-section" class="dashboard-section">
+                <h2>AGENTS.md</h2>
+                <div id="agents-content" class="file-content">Loading...</div>
+            </section>
+
+            <section id="memory-section" class="dashboard-section">
+                <h2>Memory Files</h2>
+                <ul id="memory-file-list" class="file-list">Loading...</ul>
+                <div id="current-memory-content" class="file-content"></div>
+            </section>
+            
+            <section id="monologue-section" class="dashboard-section">
+                <h2>INTERNAL MONOLOGUE.md</h2>
+                <div id="monologue-content" class="file-content">Loading...</div>
+            </section>
+            
+            <section id="tasks-section" class="dashboard-section">
+                <h2>TASKS.md</h2>
+                <div id="tasks-content" class="file-content">Loading...</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="current-year"></span> Los Blanco. Powered by OpenClaw.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
